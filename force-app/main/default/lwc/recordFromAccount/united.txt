@@ -1,0 +1,5 @@
+mode="readonly"
+                layout-type="compact"
+                density="compact"
+
+                record-id="0018d00000Dgz25AAB"

@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Wire Apex Adapter" icon-name="standard:account">
+        <div class="slds-m-around_medium">
+            <template if:true={accounts.data}>
+                <lightning-datatable 
+                key-field="Id" 
+                data={accounts.data} 
+                columns={columns}
+                ></lightning-datatable>
+
+            </template>
+            <template if:true={accounts.error}>
+                Something is wrong with my Org data
+            </template>
+
+        </div>
+    </lightning-card>
+</template>

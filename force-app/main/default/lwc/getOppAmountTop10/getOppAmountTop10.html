@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="WIRED APEX: TOP 10 OPPORTUNITY" icon-name="standard:opportunity">
+        <div class="slds-m-around_medium">
+            <template if:true={opportunityAmountTop10.data}>
+                <lightning-datatable
+                key-field="Id"
+                data={opportunityAmountTop10.data}
+                columns={columns}
+                ></lightning-datatable>
+            </template>
+            <template if:true={opportunityAmountTop10.error}>
+                Something is wrong with my Org data
+            </template>
+
+        </div>
+    </lightning-card>
+</template>

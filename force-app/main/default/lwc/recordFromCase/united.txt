@@ -1,0 +1,35 @@
+ Subject: SUBJECT_FIELD,
+        Priority: PRIORITY_FIELD,
+        Status:STATUS_FIELD,
+        CaseNumber:CASENUMBER_FIELD,
+        Type:TYPE_FIELD, 
+
+
+
+        <template>
+    <lightning-card title="RECORD FORM: CASE" icon-name="standard:case">
+        <div class="slds-m-around_medium">
+            <lightning-record-edit-form 
+                object-api-name= "CASE_OBJECT" 
+                record-id="5008d000008bdhBAAQ"
+                onsuccess={showSucessToastMessage} 
+                onerror={showErrorToastMessage}>
+            <!--Input fields-->
+            <lightning-input-field field-name={fields.Subject}></lightning-input-field>
+            <lightning-input-field field-name={fields.Priority}></lightning-input-field>
+            <lightning-input-field field-name={fields.Status}></lightning-input-field>
+             <!--Conditional rendering-->
+            
+                <lightning-input-field field-name={fields.CaseNumber}></lightning-input-field>
+                <lightning-input-field field-name={fields.Type}></lightning-input-field>
+            
+             <!--Submit, Cancel Button-->
+             <div class="slds-align_absolute-center">
+                <lightning-button variant="neutral" type="reset" label="Cancel"></lightning-button>
+                <lightning-button variant="brand" type="submit" label="Submit"></lightning-button>
+            </div>
+            
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>

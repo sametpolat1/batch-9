@@ -1,0 +1,26 @@
+<template>
+<lightning-card title="Assignment =>Imperative Apex : Account Industry" icon-name="standard:account">
+<div class="slds-m-around_medium">
+    <lightning-combobox
+    label="Select an industry"
+    value={selectedValue}
+    options={selectedIndustry}
+    onchange={changeHandler}
+    ></lightning-combobox>
+    <template if:true={accounts}>
+        <lightning-datatable
+        key-field="accounts.Id"
+        data={accounts}
+        columns ={columns}
+        ></lightning-datatable>
+
+       <template if:false={error}>
+         <div class="slds-m-around_medium">
+            <strong> No matching accounts found for the selected industry!</strong>
+         </div>
+       </template> 
+    </template>
+
+</div>        
+    </lightning-card>
+</template>

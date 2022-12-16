@@ -1,0 +1,12 @@
+Students std1 = new Students();
+    std1.firstName ='Ahmet' ;
+    std1.lastName ='And' ;
+    std1.classYear = 2002 ;
+    std1.major = 'Physics' ;
+    std1.generateReport();
+Students std2 = new Students();
+    std2.firstName = 'Mustafa' ;
+    std2.lastName ='Karadeniz';
+    std2.classYear = 2005;
+    std2.major ='Electrical' ;
+    std2.generateReport();

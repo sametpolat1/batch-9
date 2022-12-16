@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Lightning VRecord View Form" icon-name="standard:account">
+        <div class="slds-m-around_medium">
+            <lightning-record-view-form record-id="0018d00000Dgz25AAB" object-api-name={objectName}>
+                <lightning-output-field field-name={fields.name}></lightning-output-field>
+                <template if:true={showContent}>
+                    <lightning-output-field field-name={fields.type}></lightning-output-field>
+                </template>
+                <lightning-output-field field-name={fields.revenue}></lightning-output-field>
+                <lightning-output-field field-name={fields.industry}></lightning-output-field>
+            </lightning-record-view-form>
+        </div>
+    </lightning-card>
+</template>

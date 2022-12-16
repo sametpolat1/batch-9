@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Template Looping">
+        <div class="slds-m-around_medium">
+            <template for:each={fruits} for:item="fruit"> 
+              <!-- for item de dongunun ismini belirliyoruz--> 
+                <div key={fruit}>{fruit}</div>
+            </template>
+            <template for:each={accounts} for:item="account">
+                <div key={account.id}> {account.id} {account.name} {account.title}</div>
+            </template>
+            <!--
+                for(Integer i =0; i<length: i++)
+            -->
+        </div>
+    </lightning-card>
+</template>
